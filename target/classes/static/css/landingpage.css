@@ -4,16 +4,13 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%; /* Ensure the body uses full viewport height */
-}
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     line-height: 1.6;
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack children vertically */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -48,7 +45,7 @@ nav a:hover {
 section {
     padding: 20px;
     text-align: center;
-    flex: 1; /* Allow this section to grow and fill available space */
+    flex: 1; /* This will allow the section to grow and push the footer to the bottom */
 }
 
 section h2 {
@@ -83,7 +80,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 0; /* No margin at the bottom */
+    margin-top: auto; /* Ensures the footer stays at the bottom */
 }
 
 footer p {
